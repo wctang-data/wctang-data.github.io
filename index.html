@@ -1,21 +1,11 @@
----
----
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8"/>
-    <title>{{ site.title }}</title>
+    <title>wctang-data</title>
   </head>
   <body>
-    <h1>{{ site.title }}</h1>
-    <a href="https://github.com/wctang-data/">Github</a>
-    <ul>
-{% for podcast in site.podcasts %}
-      <li>
-        <a href="{{ "/" | prepend: podcast.id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">{{ podcast.title }}</a>
-      </li>
-{% endfor %}
-    </ul>
-    <p>{{ site.time | date_to_rfc822 }}</p>
+    <h1>wctang-data</h1>
+    <a href="podcasts/">Podcasts</a>
   </body>
 </html>
